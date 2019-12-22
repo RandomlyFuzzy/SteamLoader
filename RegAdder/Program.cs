@@ -19,7 +19,7 @@ namespace RegAdder
                     Location += "\"" + item + "\" ";
                 }
                 RegistryKey key;
-                key = Registry.ClassesRoot.CreateSubKey("testLoader");
+                key = Registry.ClassesRoot.CreateSubKey("steamLoader");
                 key.SetValue("URL Protocol", "");
                 key.CreateSubKey("shell").CreateSubKey("open").CreateSubKey("command").SetValue("", Location);
             }
